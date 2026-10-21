@@ -26,13 +26,16 @@
   <li><strong>Meal photos.</strong> When you photograph a meal, the photo is sent to Google's Gemini API to identify the food and estimate nutrition. We do not save the photo on our servers.</li>
   <li><strong>Voice logging.</strong> When you log food by voice, your iPhone turns your speech into text on the device. The recording is not uploaded. The text is sent to Google's Gemini API to work out the foods and nutrition.</li>
   <li><strong>Purchase information.</strong> Subscriptions are processed by Apple and managed through RevenueCat. We receive subscription status, not your payment details.</li>
+  <li><strong>Sign-in.</strong> You can sign in with email and password, Sign in with Apple, or Google. Apple or Google gives us your name and email address if you choose to share them, and Firebase keeps your account.</li>
+  <li><strong>Barcode scans.</strong> When you scan a barcode, the number is sent from your phone to Open Food Facts, a public food database, to find the product. Open Food Facts can see your IP address. We do not send them your name, email or account ID.</li>
+  <li><strong>Apple Health.</strong> If you allow it, Calcadia reads your steps, exercise minutes, resting heart rate, weight and body fat from Apple Health to show them in the app. Calcadia only reads from Health; it never writes to it. Your weight and body fat readings are saved to your Calcadia account so we can show your trend. Steps, exercise minutes and heart rate stay on your phone.</li>
 </ul>
 
 <h2>How we use it</h2>
 <p>Your data is used to run the app: calculating your daily totals, generating suggestions, syncing your logs across sessions, and maintaining your subscription. We do not sell your data, and we do not use it for advertising.</p>
 
 <h2>Where your data lives</h2>
-<p>Your logs and profile are stored in a Supabase database. Authentication data is held by Firebase. Photo and voice content is processed through Google's Gemini API. Subscription status is held by RevenueCat and Apple.</p>
+<p>Your logs and profile are stored in a Supabase database. Authentication data is held by Firebase. Photos and typed or spoken food text are processed through Google's Gemini API. Barcodes are looked up with Open Food Facts. Subscription status is held by RevenueCat and Apple.</p>
 
 <h2>Deleting your account</h2>
 <p>You can delete your account at any time from Settings &gt; Delete Account inside the app. This removes your profile, logs, and account credentials from our systems. Subscription billing is managed by Apple; cancel there to stop renewals.</p>
